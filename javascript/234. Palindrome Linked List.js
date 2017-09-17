@@ -6,19 +6,22 @@
  *     this.next = null;
  * }
  */
+
 /**
  * @param {ListNode} head
  * @return {boolean}
  */
 var isPalindrome = function(head) {
-    var fast = head,
+    let fast = head,
         slow = head,
         midPoint;
     
     if (head === null || head.next === null) {
         return true;
     }
-    
+    while(fast && fast.next){
+
+    }
     while (fast && fast.next) {
         fast = fast.next.next;
         slow = slow.next;
